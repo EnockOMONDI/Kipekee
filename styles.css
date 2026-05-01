@@ -1314,6 +1314,317 @@ li::before {
   background: var(--accent);
 }
 
+.trip-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.75fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.trip-detail-card,
+.ai-recommendation-card {
+  border: 1px solid rgba(16, 48, 95, 0.1);
+  border-radius: 24px;
+  background: rgba(255, 253, 248, 0.86);
+  box-shadow: 0 18px 60px rgba(16, 48, 95, 0.055);
+}
+
+.trip-detail-card {
+  padding: 28px;
+}
+
+.trip-detail-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.trip-detail-head h2,
+.ai-recommendation-card h2,
+.approval-modal-panel h2 {
+  margin: 10px 0 0;
+  color: var(--ink);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.trip-detail-head p,
+.ai-recommendation-card p,
+.approval-modal-intro {
+  max-width: 660px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.trip-status {
+  flex: 0 0 auto;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(218, 23, 110, 0.1);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.trip-detail-grid,
+.approval-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.trip-detail-grid div,
+.approval-preview-grid div {
+  padding: 16px;
+  border: 1px solid rgba(16, 48, 95, 0.08);
+  border-radius: 16px;
+  background: rgba(246, 243, 237, 0.62);
+}
+
+.trip-detail-grid span,
+.approval-preview-grid span,
+.approval-message-preview span,
+.confidence-meter span {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.trip-detail-grid strong,
+.approval-preview-grid strong {
+  display: block;
+  margin-top: 8px;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.trip-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.trip-tabs button {
+  min-height: 38px;
+  padding: 0 15px;
+  border: 1px solid rgba(16, 48, 95, 0.08);
+  border-radius: 999px;
+  background: rgba(246, 243, 237, 0.58);
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.trip-tabs button.is-active {
+  background: var(--accent);
+  color: #fffdf8;
+}
+
+.trip-timeline {
+  display: grid;
+  gap: 0;
+  margin-top: 26px;
+}
+
+.trip-timeline div {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 14px;
+  padding: 0 0 18px;
+}
+
+.trip-timeline div:not(:last-child) span::after {
+  position: absolute;
+  top: 16px;
+  left: 7px;
+  width: 1px;
+  height: calc(100% + 18px);
+  background: rgba(218, 23, 110, 0.18);
+  content: "";
+}
+
+.trip-timeline span {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  margin-top: 3px;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+.trip-timeline p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.trip-timeline strong {
+  color: var(--ink);
+}
+
+.ai-recommendation-card {
+  padding: 28px;
+  background: var(--ink);
+}
+
+.ai-recommendation-card .kicker {
+  color: rgba(255, 253, 248, 0.58);
+}
+
+.ai-recommendation-card h2 {
+  color: #fffdf8;
+}
+
+.ai-recommendation-card p {
+  color: rgba(255, 253, 248, 0.7);
+}
+
+.confidence-meter {
+  display: grid;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.confidence-meter > div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.confidence-meter strong {
+  color: #fffdf8;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.confidence-meter > div:last-child {
+  height: 10px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.confidence-meter > div:last-child span {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+}
+
+.recommendation-actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.recommendation-actions button {
+  min-height: 46px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fffdf8;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.recommendation-actions button:last-child {
+  background: var(--accent);
+}
+
+.approval-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(8, 12, 24, 0.42);
+  backdrop-filter: blur(10px);
+}
+
+.approval-modal.is-open {
+  display: flex;
+}
+
+.approval-modal-panel {
+  position: relative;
+  width: min(720px, 100%);
+  padding: 32px;
+  border-radius: 26px;
+  background: #fffdf8;
+  box-shadow: 0 30px 100px rgba(8, 12, 24, 0.24);
+}
+
+.approval-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.approval-message-preview {
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px solid rgba(16, 48, 95, 0.08);
+  border-radius: 18px;
+  background: rgba(246, 243, 237, 0.62);
+}
+
+.approval-message-preview p {
+  margin: 10px 0 0;
+  color: var(--inp);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.approval-modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.approval-modal-actions button {
+  min-height: 46px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(16, 48, 95, 0.08);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.approval-modal-actions button:first-child {
+  background: var(--accent);
+  color: #fffdf8;
+}
+
 @media (max-width: 900px) {
   .dashboard-body {
     display: block;
@@ -1350,7 +1661,10 @@ li::before {
   }
 
   .dash-kpis,
-  .dash-grid {
+  .dash-grid,
+  .trip-workspace,
+  .trip-detail-grid,
+  .approval-preview-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1489,6 +1803,10 @@ li::before {
 
   .queue-row {
     grid-template-columns: auto 1fr;
+  }
+
+  .trip-detail-head {
+    flex-direction: column;
   }
 
   .queue-row > span:last-child {
