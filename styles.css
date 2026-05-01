@@ -113,7 +113,6 @@ a {
 }
 
 .nav-details a,
-.nav-location,
 .quick-chat-trigger {
   display: inline-flex;
   align-items: center;
@@ -131,12 +130,6 @@ a {
   stroke-width: 2;
 }
 
-.nav-location svg {
-  color: var(--accent);
-  fill: var(--accent);
-  stroke: var(--accent);
-}
-
 .quick-chat-trigger {
   border: 0;
   padding: 0;
@@ -144,6 +137,12 @@ a {
   color: var(--accent);
   cursor: pointer;
   font: inherit;
+}
+
+.nav-link {
+  color: var(--accent);
+  font-size: 18px;
+  font-weight: 800;
 }
 
 .section-shell {
@@ -155,6 +154,29 @@ a {
   min-height: auto;
   padding-top: 170px;
   padding-bottom: 46px;
+}
+
+.solution-hero {
+  padding-top: 190px;
+  padding-bottom: 76px;
+}
+
+.solution-hero h1 {
+  max-width: 980px;
+  margin: 24px 0 0;
+  color: var(--ink);
+  font-size: clamp(54px, 6.6vw, 104px);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.solution-hero p {
+  max-width: 780px;
+  margin: 32px 0 0;
+  color: var(--inp);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 .label-bar {
@@ -872,6 +894,11 @@ li::before {
     padding-bottom: 46px;
   }
 
+  .solution-hero {
+    padding-top: 160px;
+    padding-bottom: 56px;
+  }
+
   .label-bar {
     margin-bottom: 52px;
   }
@@ -985,6 +1012,19 @@ li::before {
   .hero {
     padding-top: 170px;
     padding-bottom: 44px;
+  }
+
+  .solution-hero {
+    padding-top: 170px;
+    padding-bottom: 42px;
+  }
+
+  .solution-hero h1 {
+    font-size: clamp(40px, 11vw, 60px);
+  }
+
+  .solution-hero p {
+    font-size: 17px;
   }
 
   .label-bar {

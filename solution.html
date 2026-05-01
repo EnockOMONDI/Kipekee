@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="See how Kipekee's AI travel operations agents execute real workflows with human approval and controlled permissions."
+    />
+    <title>Our Solution - Kipekee</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="brand" href="index.html" aria-label="Kipekee home">kipekee<span>.</span></a>
+      <div class="nav-details" aria-label="Kipekee contact details">
+        <a class="nav-link" href="solution.html" aria-current="page">Our Solution</a>
+        <button class="quick-chat-trigger" type="button" aria-controls="quick-chat" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 11.5a8.4 8.4 0 0 1-8.7 8.2 9.5 9.5 0 0 1-4.1-.9L3 20l1.4-4.8a7.8 7.8 0 0 1-.9-3.7A8.4 8.4 0 0 1 12.2 3 8.4 8.4 0 0 1 21 11.5Z" />
+            <path d="M8.2 10.8h7.6" />
+            <path d="M8.2 14h4.9" />
+          </svg>
+          Quick Chat
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="solution-hero section-shell">
+        <span class="kicker">Our solution</span>
+        <h1>Kipekee handles the  work. Your team approves.</h1>
+        <p>
+          From the first inquiry to the final follow-up, Kipekee turns scattered travel
+          requests into organized workflows for quotes, visas, suppliers, groups, and
+          client communication.
+        </p>
+      </section>
+
+      <section class="workflows section-shell">
+        <div class="section-heading centered">
+          <span class="kicker">Real workflows</span>
+          <h2>Six operating scenarios.</h2>
+          <p>
+            Each workflow is designed for the daily work that slows down travel agencies:
+            inquiries, groups, visas, suppliers, sales follow-up, and marketing.
+          </p>
+        </div>
+
+        <div class="workflow-grid">
+          <article class="workflow-card">
+            <span>01</span>
+            <h3>Inquiry to Quote Engine</h3>
+            <p>Email received, details extracted, itinerary and quote drafted, human approves, Kipekee sends and tracks the response.</p>
+          </article>
+          <article class="workflow-card">
+            <span>02</span>
+            <h3>Travel Coordinator</h3>
+            <p>Passenger lists, rooming, visa checklists, communication, and trip movement are organized from one workflow.</p>
+          </article>
+          <article class="workflow-card">
+            <span>03</span>
+            <h3>Visa Desk Assistant</h3>
+            <p>Documents are checked, missing items are flagged, reminders are drafted, and submission waits for approval.</p>
+          </article>
+          <article class="workflow-card">
+            <span>04</span>
+            <h3>Hotel & Supplier Sourcing</h3>
+            <p>Hotels and suppliers are identified, compared, and packaged into RFQs your team can approve before sending.</p>
+          </article>
+          <article class="workflow-card">
+            <span>05</span>
+            <h3>Sales Follow-Up Engine</h3>
+            <p>Inactive leads are detected, follow-ups are drafted, and client conversations keep moving without manual chasing.</p>
+          </article>
+          <article class="workflow-card">
+            <span>06</span>
+            <h3>Marketing Content Engine</h3>
+            <p>Campaign content is generated, reviewed by a human, published, and tracked for engagement.</p>
+          </article>
+        </div>
+
+        <div class="control-panel">
+          <div>
+            <span class="kicker">Human control layer</span>
+            <h3>The agent assists. Humans decide.</h3>
+          </div>
+          <div class="control-grid">
+            <article>
+              <strong>Read</strong>
+              <p>Emails, documents, sheets, and travel records.</p>
+            </article>
+            <article>
+              <strong>Write</strong>
+              <p>Drafts, internal records, checklists, and follow-ups.</p>
+            </article>
+            <article>
+              <strong>Restricted send</strong>
+              <p>Client-facing communication requires human approval.</p>
+            </article>
+            <article>
+              <strong>No access</strong>
+              <p>No payment action or ticket issuance without your team.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta section-shell">
+        <div>
+          <span class="kicker">Start operating smarter</span>
+          <p>Give your agency an AI operator that prepares the work before your team opens the inbox.</p>
+        </div>
+        <a
+          class="cta-button"
+          href="https://wa.me/254726436676?text=Hi%20Sean%2C%20I%27d%20like%20to%20request%20a%20corporate%20setup%20for%20Kipekee."
+          target="_blank"
+          rel="noopener"
+        >
+          Request Corporate Setup
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer section-shell">
+      <a class="brand" href="index.html" aria-label="Kipekee home">kipekee<span>.</span></a>
+      <p>Built for modern travel agencies</p>
+    </footer>
+
+    <div class="quick-chat" id="quick-chat" aria-hidden="true">
+      <div class="quick-chat-panel" role="dialog" aria-labelledby="quick-chat-title">
+        <button class="quick-chat-close" type="button" aria-label="Close quick chat">×</button>
+        <span class="kicker">Quick chat</span>
+        <h2 id="quick-chat-title">Hi, I’m Sean. Ready to answer your questions.</h2>
+        <br>
+        <form class="quick-chat-form">
+          <textarea name="message" rows="4" placeholder="Type your question..." required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      const chat = document.querySelector("#quick-chat");
+      const chatTrigger = document.querySelector(".quick-chat-trigger");
+      const chatClose = document.querySelector(".quick-chat-close");
+      const chatForm = document.querySelector(".quick-chat-form");
+      const whatsappNumber = "254726436676";
+
+      function setChatOpen(isOpen) {
+        chat.classList.toggle("is-open", isOpen);
+        chat.setAttribute("aria-hidden", String(!isOpen));
+        chatTrigger.setAttribute("aria-expanded", String(isOpen));
+      }
+
+      chatTrigger.addEventListener("click", () => setChatOpen(true));
+      chatClose.addEventListener("click", () => setChatOpen(false));
+
+      chatForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const data = new FormData(chatForm);
+        const userMessage = data.get("message").trim();
+        const text = `Hi Sean, I have a question about Kipekee: ${userMessage}`;
+        window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`, "_blank");
+        chatForm.reset();
+      });
+    </script>
+  </body>
+</html>
