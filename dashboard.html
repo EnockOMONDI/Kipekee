@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A static prototype of the Kipekee AI travel agency operating system dashboard."
+    />
+    <title>Kipekee OS Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-body is-loading">
+    <div class="demo-preloader" aria-label="Loading Kipekee demo">
+      <div class="preloader-orbit" aria-hidden="true"></div>
+      <div class="preloader-logo">kipekee OS<span>.</span></div>
+      
+    </div>
+
+    <aside class="dash-sidebar">
+      <nav class="dash-nav" aria-label="Dashboard navigation">
+        <a class="is-active" href="#command">Command Center</a>
+        <a href="#inquiries">Inquiries</a>
+        <a href="#trips">Trip Files</a>
+        <a href="#quotes">Quotes</a>
+        <a href="#visa">Visa Desk</a>
+        <a href="#suppliers">Suppliers</a>
+        <a href="#approvals">Approvals</a>
+        <a href="#reports">Reports</a>
+      </nav>
+      <div class="dash-sidebar-card">
+        <span>AI status</span>
+        <strong>8 agents active</strong>
+        <p>Monitoring inboxes, quotes, visa files, suppliers, and follow-ups.</p>
+      </div>
+    </aside>
+
+    <main class="dash-main" id="command">
+      <header class="dash-topbar">
+        <div>
+          <span class="kicker">Kipekee OS</span>
+          <h1>Command Center</h1>
+        </div>
+        <div class="dash-actions">
+          <label class="dash-search">
+            <span>Search</span>
+            <input type="search" placeholder="Client, destination, quote..." />
+          </label>
+          <button type="button">Create trip file</button>
+        </div>
+      </header>
+
+      <section class="dash-kpis" aria-label="Operating metrics">
+        <article>
+          <span>New inquiries</span>
+          <strong>18</strong>
+          <p>6 urgent, 12 normal</p>
+        </article>
+        <article>
+          <span>Quotes ready</span>
+          <strong>7</strong>
+          <p>Waiting for review</p>
+        </article>
+        <article>
+          <span>Approvals needed</span>
+          <strong>4</strong>
+          <p>Before client send</p>
+        </article>
+        <article>
+          <span>Follow-ups due</span>
+          <strong>11</strong>
+          <p>Across warm leads</p>
+        </article>
+        <article>
+          <span>Visa risks</span>
+          <strong>3</strong>
+          <p>Missing documents</p>
+        </article>
+      </section>
+
+      <section class="dash-grid">
+        <article class="dash-panel dash-panel-large" id="inquiries">
+          <div class="dash-panel-head">
+            <div>
+              <span class="kicker">Live queue</span>
+              <h2>Priority workflow queue</h2>
+            </div>
+            <button type="button">View all</button>
+          </div>
+          <div class="workflow-queue">
+            <div class="queue-row">
+              <span class="status-dot hot"></span>
+              <div>
+                <strong>Corporate retreat inquiry</strong>
+                <p>Dubai, 28 travelers, hotel + flights, response needed today</p>
+              </div>
+              <span>Quote drafting</span>
+            </div>
+            <div class="queue-row">
+              <span class="status-dot"></span>
+              <div>
+                <strong>Family holiday request</strong>
+                <p>Portugal, 5 travelers, budget noted, hotel options pending</p>
+              </div>
+              <span>Hotel sourcing</span>
+            </div>
+            <div class="queue-row">
+              <span class="status-dot warn"></span>
+              <div>
+                <strong>Visa file missing documents</strong>
+                <p>UK visitor visa, bank statement and invitation letter missing</p>
+              </div>
+              <span>Needs reminder</span>
+            </div>
+            <div class="queue-row">
+              <span class="status-dot"></span>
+              <div>
+                <strong>School group movement</strong>
+                <p>Rooming list updated, 4 passports still pending</p>
+              </div>
+              <span>Travel coordination</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dash-panel" id="approvals">
+          <div class="dash-panel-head">
+            <div>
+              <span class="kicker">Human control</span>
+              <h2>Approval queue</h2>
+            </div>
+          </div>
+          <div class="approval-stack">
+            <div>
+              <strong>Send quote to Acme Ltd</strong>
+              <p>Quote value: KES 1.4M. Margin: 14%.</p>
+              <div class="approval-actions">
+                <button type="button">View</button>
+                <button type="button">Edit</button>
+                <button type="button">Approve</button>
+              </div>
+            </div>
+            <div>
+              <strong>Supplier RFQ: Mombasa hotels</strong>
+              <p>Agent prepared 6 supplier requests.</p>
+              <div class="approval-actions">
+                <button type="button">View</button>
+                <button type="button">Edit</button>
+                <button type="button">Approve</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="dash-panel" id="trips">
+          <div class="dash-panel-head">
+            <div>
+              <span class="kicker">Trip files</span>
+              <h2>Needs attention</h2>
+            </div>
+          </div>
+          <div class="trip-list">
+            <div>
+              <strong>Tokyo family package</strong>
+              <span>Awaiting flight approval</span>
+            </div>
+            <div>
+              <strong>Paris incentive group</strong>
+              <span>Rooming conflict found</span>
+            </div>
+            <div>
+              <strong>Nairobi NGO visit</strong>
+              <span>Supplier response pending</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dash-panel dash-panel-large">
+          <div class="dash-panel-head">
+            <div>
+              <span class="kicker">Agent activity</span>
+              <h2>What Kipekee is doing now</h2>
+            </div>
+          </div>
+          <div class="activity-feed">
+            <div>
+              <span>09:42</span>
+              <p>Inquiry Agent extracted 4 new requests from email and WhatsApp.</p>
+            </div>
+            <div>
+              <span>09:38</span>
+              <p>Quote Agent drafted a Dubai retreat proposal with 3 hotel options.</p>
+            </div>
+            <div>
+              <span>09:31</span>
+              <p>Visa Desk Assistant flagged missing documents for 3 travelers.</p>
+            </div>
+            <div>
+              <span>09:24</span>
+              <p>Sales Follow-Up Engine prepared reminders for 11 warm leads.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="dash-panel" id="quotes">
+          <div class="dash-panel-head">
+            <div>
+              <span class="kicker">Revenue</span>
+              <h2>Pipeline</h2>
+            </div>
+          </div>
+          <div class="pipeline">
+            <div>
+              <span>Inquiry</span>
+              <strong>KES 4.8M</strong>
+            </div>
+            <div>
+              <span>Quoted</span>
+              <strong>KES 2.1M</strong>
+            </div>
+            <div>
+              <span>Approval</span>
+              <strong>KES 1.4M</strong>
+            </div>
+            <div>
+              <span>Won</span>
+              <strong>KES 860K</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="dash-panel" id="visa">
+          <div class="dash-panel-head">
+            <div>
+              <span class="kicker">Visa desk</span>
+              <h2>Document status</h2>
+            </div>
+          </div>
+          <div class="visa-bars">
+            <div>
+              <span>Uploaded</span>
+              <div><span style="width: 72%"></span></div>
+            </div>
+            <div>
+              <span>Needs review</span>
+              <div><span style="width: 38%"></span></div>
+            </div>
+            <div>
+              <span>Missing</span>
+              <div><span style="width: 18%"></span></div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script>
+      window.addEventListener("load", () => {
+        window.setTimeout(() => {
+          document.body.classList.remove("is-loading");
+          document.body.classList.add("is-loaded");
+          playWhoosh();
+        }, 4200);
+      });
+
+      function playWhoosh() {
+        try {
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          const audio = new AudioContext();
+          const duration = 0.7;
+          const sampleRate = audio.sampleRate;
+          const buffer = audio.createBuffer(1, sampleRate * duration, sampleRate);
+          const data = buffer.getChannelData(0);
+
+          for (let i = 0; i < data.length; i += 1) {
+            const t = i / data.length;
+            const envelope = Math.sin(Math.PI * t) * Math.pow(1 - t, 1.7);
+            data[i] = (Math.random() * 2 - 1) * envelope;
+          }
+
+          const source = audio.createBufferSource();
+          const filter = audio.createBiquadFilter();
+          const gain = audio.createGain();
+
+          source.buffer = buffer;
+          filter.type = "bandpass";
+          filter.frequency.setValueAtTime(260, audio.currentTime);
+          filter.frequency.exponentialRampToValueAtTime(2400, audio.currentTime + duration);
+          filter.Q.value = 1.6;
+          gain.gain.setValueAtTime(0.0001, audio.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.22, audio.currentTime + 0.08);
+          gain.gain.exponentialRampToValueAtTime(0.0001, audio.currentTime + duration);
+
+          source.connect(filter);
+          filter.connect(gain);
+          gain.connect(audio.destination);
+          source.start();
+          source.stop(audio.currentTime + duration);
+        } catch (error) {
+          // Some browsers block audio unless the page was opened from a user gesture.
+        }
+      }
+    </script>
+  </body>
+</html>
