@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visa Desk - Kipekee OS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-body is-loaded">
+    <aside class="dash-sidebar">
+      <a class="brand" href="index.html">kipekee<span>.</span></a>
+      <nav class="dash-nav">
+        <a href="dashboard.html">Command Center</a><a href="inquiries.html">Inquiries</a><a href="client-trips.html">Client Trips</a><a href="quotes.html">Quotes</a><a class="is-active" href="visa-desk.html">Visa Desk</a><a href="suppliers.html">Suppliers</a><a href="approvals.html">Approvals</a><a href="reports.html">Reports</a>
+      </nav>
+    </aside>
+    <main class="dash-main">
+      <header class="dash-topbar"><div><span class="kicker">Visa desk</span><h1>Documents and deadlines</h1></div><div class="dash-actions"><button type="button">Send reminders</button></div></header>
+      <section class="dash-page-grid">
+        <article class="dash-panel dash-panel-wide">
+          <div class="dash-panel-head"><div><span class="kicker">Checklist</span><h2>Traveler document status</h2></div></div>
+          <div class="data-table">
+            <div class="data-row data-head"><span>Traveler</span><span>Country</span><span>Missing</span><span>Deadline</span><span>Status</span></div>
+            <div class="data-row"><span>Kamau N.</span><span>UK</span><span>Bank statement</span><span>May 12</span><span class="pill warn">Missing</span></div>
+            <div class="data-row"><span>Achieng M.</span><span>UAE</span><span>None</span><span>May 08</span><span class="pill">Ready</span></div>
+            <div class="data-row"><span>Otieno O.</span><span>Schengen</span><span>Insurance</span><span>May 18</span><span class="pill hot">Risk</span></div>
+          </div>
+        </article>
+        <aside class="dash-panel"><div class="dash-panel-head"><div><span class="kicker">AI check</span><h2>Document risk</h2></div></div><div class="insight-card"><strong>3 files need action</strong><p>Kipekee recommends sending reminders today to avoid missed submission windows.</p><button type="button">Review reminders</button></div></aside>
+      </section>
+    </main>
+  </body>
+</html>

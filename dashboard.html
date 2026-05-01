@@ -19,14 +19,14 @@
 
     <aside class="dash-sidebar">
       <nav class="dash-nav" aria-label="Dashboard navigation">
-        <a class="is-active" href="#command">Command Center</a>
-        <a href="#inquiries">Inquiries</a>
-        <a href="#trips">Trip Files</a>
-        <a href="#quotes">Quotes</a>
-        <a href="#visa">Visa Desk</a>
-        <a href="#suppliers">Suppliers</a>
-        <a href="#approvals">Approvals</a>
-        <a href="#reports">Reports</a>
+        <a class="is-active" href="dashboard.html">Command Center</a>
+        <a href="inquiries.html">Inquiries</a>
+        <a href="client-trips.html">Client Trips</a>
+        <a href="quotes.html">Quotes</a>
+        <a href="visa-desk.html">Visa Desk</a>
+        <a href="suppliers.html">Suppliers</a>
+        <a href="approvals.html">Approvals</a>
+        <a href="reports.html">Reports</a>
       </nav>
       <div class="dash-sidebar-card">
         <span>AI status</span>
@@ -46,7 +46,7 @@
             <span>Search</span>
             <input type="search" placeholder="Client, destination, quote..." />
           </label>
-          <button type="button">Create trip file</button>
+          <button type="button">Create client trip</button>
         </div>
       </header>
 
@@ -132,7 +132,7 @@
           </div>
           <div class="approval-stack">
             <div>
-              <strong>Send quote to Acme Ltd</strong>
+              <strong>Send quote to Mwananchi Holdings</strong>
               <p>Quote value: KES 1.4M. Margin: 14%.</p>
               <div class="approval-actions">
                 <button type="button" data-approval-action="View">View</button>
@@ -155,17 +155,17 @@
         <article class="dash-panel" id="trips">
           <div class="dash-panel-head">
             <div>
-              <span class="kicker">Trip files</span>
+              <span class="kicker">Client trips</span>
               <h2>Needs attention</h2>
             </div>
           </div>
           <div class="trip-list">
             <div>
-              <strong>Tokyo family package</strong>
+              <strong>Wanjiku family package</strong>
               <span>Awaiting flight approval</span>
             </div>
             <div>
-              <strong>Paris incentive group</strong>
+              <strong>Kiptoo incentive group</strong>
               <span>Rooming conflict found</span>
             </div>
             <div>
@@ -253,12 +253,12 @@
         </article>
       </section>
 
-      <section class="trip-workspace" aria-label="Trip file detail and AI recommendations">
+      <section class="trip-workspace" aria-label="Client trip detail and AI recommendations">
         <article class="trip-detail-card">
           <div class="trip-detail-head">
             <div>
-              <span class="kicker">Trip file</span>
-              <h2>Acme Ltd Dubai Retreat</h2>
+              <span class="kicker">Client trip</span>
+              <h2>Mwananchi Holdings Dubai Retreat</h2>
               <p>Corporate retreat inquiry for 28 travelers. Quote draft prepared by Kipekee and waiting for human review.</p>
             </div>
             <span class="trip-status">Approval needed</span>
@@ -267,7 +267,7 @@
           <div class="trip-detail-grid">
             <div>
               <span>Client</span>
-              <strong>Acme Ltd</strong>
+              <strong>Mwananchi Holdings</strong>
             </div>
             <div>
               <span>Destination</span>
@@ -283,7 +283,7 @@
             </div>
           </div>
 
-          <div class="trip-tabs" aria-label="Trip file tabs">
+          <div class="trip-tabs" aria-label="Client trip tabs">
             <button type="button" class="is-active">Overview</button>
             <button type="button">Quote</button>
             <button type="button">Flights</button>
@@ -335,7 +335,7 @@
       <div class="approval-modal-panel" role="dialog" aria-modal="true" aria-labelledby="approval-modal-title">
         <button class="approval-modal-close" type="button" aria-label="Close approval preview">×</button>
         <span class="kicker">Approval preview</span>
-        <h2 id="approval-modal-title">Send quote to Acme Ltd</h2>
+        <h2 id="approval-modal-title">Send quote to Mwananchi Holdings</h2>
         <p class="approval-modal-intro">
           Kipekee prepared this action and paused it for human review before anything is sent to the client.
         </p>
@@ -360,7 +360,7 @@
         <div class="approval-message-preview">
           <span>Client message preview</span>
           <p>
-            Hi Acme team, attached is your Dubai retreat proposal with three package options,
+            Hi Mwananchi Holdings team, attached is your Dubai retreat proposal with three package options,
             recommended flights, hotel options, transfers, and next steps for confirmation.
           </p>
         </div>

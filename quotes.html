@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotes - Kipekee OS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-body is-loaded">
+    <aside class="dash-sidebar">
+      <a class="brand" href="index.html">kipekee<span>.</span></a>
+      <nav class="dash-nav">
+        <a href="dashboard.html">Command Center</a><a href="inquiries.html">Inquiries</a><a href="client-trips.html">Client Trips</a><a class="is-active" href="quotes.html">Quotes</a><a href="visa-desk.html">Visa Desk</a><a href="suppliers.html">Suppliers</a><a href="approvals.html">Approvals</a><a href="reports.html">Reports</a>
+      </nav>
+    </aside>
+    <main class="dash-main">
+      <header class="dash-topbar">
+        <div><span class="kicker">Quote builder</span><h1>Draft, price, approve</h1></div>
+        <div class="dash-actions"><button type="button">New quote</button></div>
+      </header>
+      <section class="dash-page-grid">
+        <article class="dash-panel dash-panel-wide">
+          <div class="dash-panel-head"><div><span class="kicker">Pipeline</span><h2>Quote drafts</h2></div></div>
+          <div class="data-table">
+            <div class="data-row data-head"><span>Quote</span><span>Client</span><span>Value</span><span>Margin</span><span>Status</span></div>
+            <div class="data-row"><span>Dubai Retreat</span><span>Mwananchi Holdings</span><span>KES 1.4M</span><span>14%</span><span class="pill hot">Approval</span></div>
+            <div class="data-row"><span>Portugal Holiday</span><span>Amina W.</span><span>KES 680K</span><span>20%</span><span class="pill">Draft</span></div>
+            <div class="data-row"><span>London School Group</span><span>Starehe Academy</span><span>KES 3.2M</span><span>18%</span><span class="pill warn">Docs needed</span></div>
+          </div>
+        </article>
+        <aside class="dash-panel">
+          <div class="dash-panel-head"><div><span class="kicker">Preview</span><h2>Package summary</h2></div></div>
+          <div class="quote-preview">
+            <h3>Dubai Retreat</h3>
+            <p>Flights, 4-star hotel, transfers, team dinner, and airport assistance.</p>
+            <strong>KES 1,400,000</strong>
+            <button type="button">Preview quote</button>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>

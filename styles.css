@@ -1625,6 +1625,247 @@ li::before {
   color: #fffdf8;
 }
 
+.dash-page-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(310px, 0.75fr);
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.dash-panel-wide {
+  min-width: 0;
+}
+
+.data-table {
+  display: grid;
+  gap: 8px;
+}
+
+.data-row {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr 1.5fr 0.8fr 1fr;
+  gap: 14px;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid rgba(16, 48, 95, 0.07);
+  border-radius: 14px;
+  background: rgba(246, 243, 237, 0.5);
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.data-head {
+  background: transparent;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.pill {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: rgba(16, 48, 95, 0.08);
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.pill.hot {
+  background: rgba(218, 23, 110, 0.12);
+  color: var(--accent);
+}
+
+.pill.warn {
+  background: rgba(230, 164, 0, 0.14);
+  color: #9b6a00;
+}
+
+.insight-card,
+.quote-preview {
+  padding: 22px;
+  border: 1px solid rgba(16, 48, 95, 0.08);
+  border-radius: 18px;
+  background: rgba(246, 243, 237, 0.55);
+}
+
+.insight-card strong,
+.quote-preview h3,
+.client-trip-board h3,
+.approval-center-list h3 {
+  display: block;
+  margin: 0;
+  color: var(--ink);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.insight-card p,
+.quote-preview p,
+.client-trip-board p,
+.approval-center-list p {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.insight-card button,
+.quote-preview button,
+.client-trip-board button,
+.dash-action-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  margin-top: 20px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fffdf8;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.dash-action-link {
+  margin-top: 20px;
+}
+
+.quote-preview strong {
+  display: block;
+  margin-top: 18px;
+  color: var(--accent);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.client-trip-board,
+.approval-center-list {
+  display: grid;
+  gap: 14px;
+}
+
+.client-trip-board article,
+.approval-center-list article {
+  padding: 20px;
+  border: 1px solid rgba(16, 48, 95, 0.08);
+  border-radius: 18px;
+  background: rgba(246, 243, 237, 0.55);
+}
+
+.client-trip-board h3,
+.approval-center-list h3 {
+  margin-top: 18px;
+}
+
+.client-trip-board div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.client-trip-board button + button {
+  background: rgba(16, 48, 95, 0.08);
+  color: var(--ink);
+}
+
+.report-bars {
+  display: grid;
+  gap: 22px;
+}
+
+.report-bars > div {
+  display: grid;
+  gap: 10px;
+}
+
+.report-bars span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.report-bars div div {
+  height: 14px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(16, 48, 95, 0.08);
+}
+
+.report-bars div div span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+}
+
+.client-trip-hero,
+.client-trip-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(310px, 0.75fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.itinerary-list {
+  display: grid;
+  gap: 14px;
+}
+
+.itinerary-list > div,
+.package-grid article,
+.message-draft {
+  padding: 20px;
+  border: 1px solid rgba(16, 48, 95, 0.08);
+  border-radius: 18px;
+  background: rgba(246, 243, 237, 0.55);
+}
+
+.itinerary-list span {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.itinerary-list h3,
+.package-grid h3 {
+  margin: 10px 0 0;
+  color: var(--ink);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.itinerary-list p,
+.package-grid p,
+.message-draft p {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.message-draft p {
+  color: var(--inp);
+  font-size: 17px;
+}
+
 @media (max-width: 900px) {
   .dashboard-body {
     display: block;
@@ -1662,9 +1903,17 @@ li::before {
 
   .dash-kpis,
   .dash-grid,
+  .client-trip-hero,
+  .client-trip-layout,
+  .package-grid,
   .trip-workspace,
   .trip-detail-grid,
-  .approval-preview-grid {
+  .approval-preview-grid,
+  .dash-page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .data-row {
     grid-template-columns: 1fr;
   }
 

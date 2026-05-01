@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reports - Kipekee OS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-body is-loaded">
+    <aside class="dash-sidebar">
+      <a class="brand" href="index.html">kipekee<span>.</span></a>
+      <nav class="dash-nav">
+        <a href="dashboard.html">Command Center</a><a href="inquiries.html">Inquiries</a><a href="client-trips.html">Client Trips</a><a href="quotes.html">Quotes</a><a href="visa-desk.html">Visa Desk</a><a href="suppliers.html">Suppliers</a><a href="approvals.html">Approvals</a><a class="is-active" href="reports.html">Reports</a>
+      </nav>
+    </aside>
+    <main class="dash-main">
+      <header class="dash-topbar"><div><span class="kicker">Reports</span><h1>Agency performance</h1></div><div class="dash-actions"><button type="button">Export report</button></div></header>
+      <section class="dash-kpis">
+        <article><span>Response time</span><strong>11m</strong><p>Average this week</p></article>
+        <article><span>Conversion</span><strong>34%</strong><p>Inquiry to booking</p></article>
+        <article><span>AI time saved</span><strong>42h</strong><p>This month</p></article>
+        <article><span>Revenue pipeline</span><strong>4.8M</strong><p>KES active pipeline</p></article>
+        <article><span>Approval SLA</span><strong>92%</strong><p>Handled on time</p></article>
+      </section>
+      <section class="dash-page-grid">
+        <article class="dash-panel dash-panel-wide">
+          <div class="dash-panel-head"><div><span class="kicker">Operations</span><h2>Workload by department</h2></div></div>
+          <div class="report-bars">
+            <div><span>Quotes</span><div><span style="width: 78%"></span></div></div>
+            <div><span>Visa Desk</span><div><span style="width: 55%"></span></div></div>
+            <div><span>Suppliers</span><div><span style="width: 42%"></span></div></div>
+            <div><span>Follow-ups</span><div><span style="width: 64%"></span></div></div>
+          </div>
+        </article>
+        <aside class="dash-panel"><div class="dash-panel-head"><div><span class="kicker">Insight</span><h2>Owner summary</h2></div></div><div class="insight-card"><strong>Approvals are the main bottleneck</strong><p>Quotes are drafted quickly, but approval response time is slowing client delivery.</p><button type="button">View approvals</button></div></aside>
+      </section>
+    </main>
+  </body>
+</html>

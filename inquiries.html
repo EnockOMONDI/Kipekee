@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inquiries - Kipekee OS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-body is-loaded">
+    <aside class="dash-sidebar">
+      <a class="brand" href="index.html" aria-label="Kipekee home">kipekee<span>.</span></a>
+      <nav class="dash-nav" aria-label="Dashboard navigation">
+        <a href="dashboard.html">Command Center</a>
+        <a class="is-active" href="inquiries.html">Inquiries</a>
+        <a href="client-trips.html">Client Trips</a>
+        <a href="quotes.html">Quotes</a>
+        <a href="visa-desk.html">Visa Desk</a>
+        <a href="suppliers.html">Suppliers</a>
+        <a href="approvals.html">Approvals</a>
+        <a href="reports.html">Reports</a>
+      </nav>
+      <div class="dash-sidebar-card">
+        <span>Inbox status</span>
+        <strong>18 new inquiries</strong>
+        <p>AI has extracted details from email, WhatsApp, web forms, and manual notes.</p>
+      </div>
+    </aside>
+
+    <main class="dash-main">
+      <header class="dash-topbar">
+        <div>
+          <span class="kicker">Inquiry inbox</span>
+          <h1>Incoming travel requests</h1>
+        </div>
+        <div class="dash-actions">
+          <label class="dash-search">
+            <span>Search</span>
+            <input type="search" placeholder="Client, source, destination..." />
+          </label>
+          <button type="button">Add inquiry</button>
+        </div>
+      </header>
+
+      <section class="dash-kpis">
+        <article><span>New today</span><strong>18</strong><p>6 urgent inquiries</p></article>
+        <article><span>AI extracted</span><strong>14</strong><p>Ready for review</p></article>
+        <article><span>Need follow-up</span><strong>5</strong><p>Missing dates or budget</p></article>
+        <article><span>Converted</span><strong>9</strong><p>Client trips created</p></article>
+        <article><span>Avg response</span><strong>11m</strong><p>Across active channels</p></article>
+      </section>
+
+      <section class="dash-page-grid">
+        <article class="dash-panel dash-panel-wide">
+          <div class="dash-panel-head">
+            <div>
+              <span class="kicker">Live requests</span>
+              <h2>Inquiry queue</h2>
+            </div>
+          </div>
+          <div class="data-table">
+            <div class="data-row data-head">
+              <span>Client</span><span>Source</span><span>Request</span><span>Urgency</span><span>Actions</span>
+            </div>
+            <div class="data-row">
+              <span>Mwananchi Holdings</span><span>Website</span><span>Dubai retreat, 28 travelers</span><span class="pill hot">Urgent</span><span>View · Convert</span>
+            </div>
+            <div class="data-row">
+              <span>Amina W.</span><span>WhatsApp</span><span>Portugal family holiday</span><span class="pill">Normal</span><span>View · Ask follow-up</span>
+            </div>
+            <div class="data-row">
+              <span>Starehe Academy</span><span>Email</span><span>Student group to London</span><span class="pill warn">Missing docs</span><span>View · Convert</span>
+            </div>
+            <div class="data-row">
+              <span>Karibu Foundation</span><span>Manual</span><span>Nairobi delegation support</span><span class="pill">Normal</span><span>View · Assign</span>
+            </div>
+          </div>
+        </article>
+
+        <aside class="dash-panel">
+          <div class="dash-panel-head">
+            <div>
+              <span class="kicker">AI extraction</span>
+              <h2>Latest summary</h2>
+            </div>
+          </div>
+          <div class="insight-card">
+            <strong>Mwananchi Holdings Dubai Retreat</strong>
+            <p>Destination, traveler count, budget range, preferred dates, and hotel category were extracted. Kipekee recommends creating a client trip and drafting three quote options.</p>
+            <button type="button">Create client trip</button>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>

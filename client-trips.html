@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Trips - Kipekee OS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-body is-loaded">
+    <aside class="dash-sidebar">
+      <a class="brand" href="index.html" aria-label="Kipekee home">kipekee<span>.</span></a>
+      <nav class="dash-nav" aria-label="Dashboard navigation">
+        <a href="dashboard.html">Command Center</a>
+        <a href="inquiries.html">Inquiries</a>
+        <a class="is-active" href="client-trips.html">Client Trips</a>
+        <a href="quotes.html">Quotes</a>
+        <a href="visa-desk.html">Visa Desk</a>
+        <a href="suppliers.html">Suppliers</a>
+        <a href="approvals.html">Approvals</a>
+        <a href="reports.html">Reports</a>
+      </nav>
+      <div class="dash-sidebar-card">
+        <span>Client trips</span>
+        <strong>32 active</strong>
+        <p>Every inquiry becomes an organized workspace with quotes, visas, suppliers, documents, and approvals.</p>
+      </div>
+    </aside>
+
+    <main class="dash-main">
+      <header class="dash-topbar">
+        <div>
+          <span class="kicker">Client trips</span>
+          <h1>Manage active trips</h1>
+        </div>
+        <div class="dash-actions">
+          <label class="dash-search"><span>Search</span><input type="search" placeholder="Client, destination, consultant..." /></label>
+          <button type="button">Create client trip</button>
+        </div>
+      </header>
+
+      <section class="dash-page-grid">
+        <article class="dash-panel dash-panel-wide">
+          <div class="dash-panel-head"><div><span class="kicker">Workspaces</span><h2>Trips needing attention</h2></div></div>
+          <div class="client-trip-board">
+            <article>
+              <span class="pill hot">Approval needed</span>
+              <h3>Mwananchi Holdings Dubai Retreat</h3>
+              <p>28 travelers · KES 1.4M quote · margin review needed</p>
+              <div><a class="dash-action-link" href="client-trip-mwananchi-dubai.html">Open</a><button type="button">Request approval</button></div>
+            </article>
+            <article>
+              <span class="pill warn">Rooming conflict</span>
+              <h3>Kiptoo Incentive Group</h3>
+              <p>18 travelers · hotel shortlist ready · rooming issue detected</p>
+              <div><button type="button">Open</button><button type="button">Assign</button></div>
+            </article>
+            <article>
+              <span class="pill">Supplier pending</span>
+              <h3>Nairobi NGO Visit</h3>
+              <p>12 travelers · transport and hotel supplier replies pending</p>
+              <div><button type="button">Open</button><button type="button">Follow up</button></div>
+            </article>
+          </div>
+        </article>
+
+        <aside class="dash-panel">
+          <div class="dash-panel-head"><div><span class="kicker">Next action</span><h2>AI recommendation</h2></div></div>
+          <div class="insight-card">
+            <strong>Fix margin before quote send</strong>
+            <p>Mwananchi Holdings quote is ready, but Kipekee recommends moving from 14% to 18% margin before approval.</p>
+            <button type="button">Review quote</button>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>

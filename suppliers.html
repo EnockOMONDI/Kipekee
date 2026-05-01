@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suppliers - Kipekee OS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-body is-loaded">
+    <aside class="dash-sidebar">
+      <a class="brand" href="index.html">kipekee<span>.</span></a>
+      <nav class="dash-nav">
+        <a href="dashboard.html">Command Center</a><a href="inquiries.html">Inquiries</a><a href="client-trips.html">Client Trips</a><a href="quotes.html">Quotes</a><a href="visa-desk.html">Visa Desk</a><a class="is-active" href="suppliers.html">Suppliers</a><a href="approvals.html">Approvals</a><a href="reports.html">Reports</a>
+      </nav>
+    </aside>
+    <main class="dash-main">
+      <header class="dash-topbar"><div><span class="kicker">Suppliers</span><h1>RFQs and partner options</h1></div><div class="dash-actions"><button type="button">New RFQ</button></div></header>
+      <section class="dash-page-grid">
+        <article class="dash-panel dash-panel-wide">
+          <div class="dash-panel-head"><div><span class="kicker">Requests</span><h2>Supplier RFQs</h2></div></div>
+          <div class="data-table">
+            <div class="data-row data-head"><span>Request</span><span>Supplier</span><span>Destination</span><span>Deadline</span><span>Status</span></div>
+            <div class="data-row"><span>Dubai 4-star hotel</span><span>3 hotels</span><span>Dubai</span><span>Today</span><span class="pill hot">Pending</span></div>
+            <div class="data-row"><span>Mombasa transfers</span><span>2 transporters</span><span>Mombasa</span><span>Tomorrow</span><span class="pill">Sent</span></div>
+            <div class="data-row"><span>Paris group rates</span><span>5 hotels</span><span>Paris</span><span>May 06</span><span class="pill warn">Compare</span></div>
+          </div>
+        </article>
+        <aside class="dash-panel"><div class="dash-panel-head"><div><span class="kicker">Recommendation</span><h2>Best supplier match</h2></div></div><div class="insight-card"><strong>Hotel Option B</strong><p>Best balance of price, distance, cancellation terms, and group capacity.</p><button type="button">Compare options</button></div></aside>
+      </section>
+    </main>
+  </body>
+</html>
